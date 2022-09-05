@@ -1,0 +1,15 @@
+---
+export interface Props {
+  show: boolean;
+}
+
+const { show, fallback = null } = Astro.props;
+console.log(Astro.props);
+---
+
+{show && <slot />}
+{!show && <slot name="fallback" />}
+
+<style>
+
+</style>

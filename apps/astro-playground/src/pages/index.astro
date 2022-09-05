@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Show from "../components/Show.astro";
+
+const name = "Jun";
+---
+
+<Layout title="Welcome to Astro.">
+  <main> hello, {name}</main>
+  <Show show={true}>
+    <div slot="fallback">nothing</div>
+    <div> hey this is the content</div>
+  </Show>
+</Layout>
+
+<style>
+
+</style>
